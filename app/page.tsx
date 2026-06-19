@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { BlurFade } from "@/components/blur-fade";
+import { ContactTallyForm } from "@/components/contact-tally-form";
 import { Lens } from "@/components/lens";
 import { MagicCard } from "@/components/magic-card";
 import { Button } from "@/components/ui/button";
@@ -257,6 +258,34 @@ export default function Home() {
           </h2>
         </BlurFade>
         <WorksGrid works={works} />
+      </section>
+
+      <section
+        id="contact"
+        aria-labelledby="contact-heading"
+        className="relative mx-auto w-full max-w-4xl px-6 py-20 sm:py-32"
+      >
+        <BlurFade>
+          <p className="font-display text-lg text-blush-deep">Get in touch</p>
+          <h2
+            id="contact-heading"
+            className="mt-1 font-display text-4xl text-ink sm:text-5xl"
+          >
+            함께 만들 프로젝트
+          </h2>
+          <p className="mt-4 max-w-2xl text-sm leading-7 text-ink/75 sm:text-base">
+            브랜드, 제품, 인터페이스, 콘텐츠를 함께 만들고 싶다면 간단히
+            남겨주세요.
+          </p>
+        </BlurFade>
+
+        <BlurFade delay={0.1} className="mt-10 sm:mt-12">
+          <div className="torn-paper -rotate-1 px-4 py-6 sm:px-8 sm:py-8">
+            <div className="rotate-1 rounded-sm bg-blush/20 px-2 py-2 sm:px-4 sm:py-4">
+              <ContactTallyForm />
+            </div>
+          </div>
+        </BlurFade>
       </section>
 
       <CommentSection />
