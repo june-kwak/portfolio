@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <rect width="640" height="360" fill="#FFF3E0"/>
+  <circle cx="500" cy="90" r="115" fill="#FFCC80" opacity="0.55"/>
+  <circle cx="140" cy="270" r="95" fill="#FFB74D" opacity="0.4"/>
+  <text x="32" y="48" font-family="sans-serif" font-size="14" fill="#E65100" opacity="0.5">Onboarding</text>
+</svg>
